@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Git clone'){
             steps{
-                git 'https://github.com/shazforiot/HelloWorld-Springboot-App.git'
+                git 'https://github.com/sasan07/Jenkinsdocker.git'
             }
         }
         
@@ -14,7 +14,8 @@ pipeline{
         }
         stage('Create Dockerimage'){
             steps{
-                sh 'docker build -t thetips4you/springboot:latest .'
+                sh 'docker build -t Hello Master, Welcome to Jenkins!!
+All/springboot:latest .'
             }
         }
         
